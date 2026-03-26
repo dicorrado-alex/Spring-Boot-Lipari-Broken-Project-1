@@ -11,6 +11,20 @@ public class AlertService {
         this.notificationService = notificationService;
     }
 
+    /*
+
+    Avrei potuto risolvere il problema di ambiguità specificando al costruttore
+    quale implementazione di NotificationService utilizzare attreverso l'annotazione:
+
+    @Qualifier("emailNotificationService")
+
+
+    public AlertService(@Qualifier("emailNotificationService") NotificationService notificationService) {
+        this.notificationService = notificationService;
+    }
+
+     */
+
     public void raiseAlert(String accountId, String reason) {
         notificationService.notify(accountId, "ALERT: " + reason);
     }
