@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 // Attivato caricamento proprietà per LipariBankProperties
+// commento
 @EnableConfigurationProperties(LipariBankProperties.class)
 @SpringBootApplication
 public class LipariBankApplication {
