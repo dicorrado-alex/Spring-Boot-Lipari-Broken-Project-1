@@ -2,8 +2,10 @@ package com.lipari.bank.account;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
+@Primary // Risolve l'ambiguità tra le due implementazioni
 @Service("emailNotificationService")
 public class EmailNotificationService implements NotificationService {
 
