@@ -13,3 +13,4 @@ liparibank:
 logging:
   level:
     com.lipari: INFO
+    org.springframework.boot.context.properties: TRACE
